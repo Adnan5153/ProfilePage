@@ -10,6 +10,7 @@ class ProfileHeader extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      margin: const EdgeInsets.only(top: 50),
       transform: Matrix4.translationValues(0, -40, 0),
       child: Column(
         children: [

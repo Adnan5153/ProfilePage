@@ -9,6 +9,7 @@ import '../../widgets/profile_about.dart';
 import '../../widgets/profile_education.dart';
 import '../../widgets/profile_experience.dart';
 import '../../widgets/profile_skills.dart';
+import '../../widgets/profile_footer.dart';
 
 class ProfileScreen extends StatelessWidget {
   const ProfileScreen({super.key});
@@ -147,29 +148,7 @@ class ProfileScreen extends StatelessWidget {
                 const SizedBox(height: AppDimensions.paddingXL),
 
                 // Footer
-                Container(
-                  padding: const EdgeInsets.all(AppDimensions.paddingL),
-                  child: const Column(
-                    children: [
-                      Text(
-                        'Thank you for visiting!',
-                        style: TextStyle(
-                          fontSize: 18,
-                          fontWeight: FontWeight.w600,
-                          color: AppColors.grey700,
-                        ),
-                      ),
-                      SizedBox(height: AppDimensions.paddingS),
-                      Text(
-                        '© 2024 ${AppStrings.fullName}. All rights reserved.',
-                        style: TextStyle(
-                          fontSize: 14,
-                          color: AppColors.grey500,
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
+                const FooterWidget(),
               ],
             ),
           ),
